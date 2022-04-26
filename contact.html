@@ -4,7 +4,8 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  
+  <script src="script.js"></script>
+
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="index.html">Rizwan Azhar</a>
@@ -39,33 +40,34 @@
 </p>
 </div>
 <br>
-<form class="container py-5 yo ">
+<form  action="contact.html" class="container py-5 yo ">
   <div class="form-row ">
     <div class="form-group col-md-6">
-      <label for="inputEmail4">First Name</label>
+      <label > <strong>First Name* </strong></label>
       <input type="text" class="form-control" placeholder="First Name">
     </div>
     <div class="form-group col-md-6">
-      <label >Last Name</label>
+      <label > <strong> Last Name* </strong></label>
       <input type="text" class="form-control" placeholder="Last Name">
     </div>
      <div class="form-group col-md-6">
-      <label >Email</label>
+      <label > <strong> Email* </strong></label>
       <input type="email" class="form-control" placeholder="Email">
     </div>
     <div class="form-group col-md-6">
-      <label >Contact</label>
+      <label> <strong> Contact </strong> (Optional) </label>
       <input type="number" class="form-control" placeholder="+92">
     </div>
   </div>
-      <label >Your Question?</label>
-<br>
-  <textarea rows="10" cols="50"></textarea>
-   
-   
+    <label> <strong> Details About The Project* </strong></label>
+    <br>
+    <textarea rows="10" cols="50"></textarea>
+     
   </div>
  <br> <br>
-  <button type="submit" class="btn btn-primary">Contact Me</button>
+  <button onclick="myalert()" type="submit" class="btn btn-success">Contact Me</button>
+  <button  type="reset" class="btn btn-danger">Reset</button>
+
 </form>
 <br>
 
@@ -74,20 +76,20 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-sm-4 col-md-3 item">
-                        <h3>Home</h3>
+                       <a style="color:white" href="index.html">   <h3>Home</h3> </a>
                         <ul>
-                            <li><a href="#">About</a></li>
+                            <li><a href="index.html">About</a></li>
                            
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
-                        <h3>Projects</h3>
+                       <a style="color:white" href="projects.html">   <h3>Projects</h3> </a>
                         <ul>
                            <li><a href="resume.html">Resume</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
-                        <h3>Contact me</h3>
+                      <a style="color:white" href="contact.html">  <h3>Contact me</h3> </a>
                         <ul>
                             <li><a href="#">Facebook</a></li>
                            <li><a href="#">Linkdin</a></li>
